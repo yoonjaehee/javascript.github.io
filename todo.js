@@ -53,7 +53,7 @@ function todohandle(event){
 
 function loadtodos(){
     const loadedToDos = localStorage.getItem(todos);
-    if(todos !== null){
+    if(loadedToDos !== null){
         const parsedToDos = JSON.parse(loadedToDos);
         parsedToDos.forEach(function(toDo){paintToDo(toDo.text);});
     }
